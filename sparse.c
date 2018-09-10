@@ -2,7 +2,7 @@
 #include<conio.h>
 Void main()
 {
- int m,n,s=0,i,j,x=0,y=0,b[100][3];
+ int m,n,s=1,i,j,x=0,y=0,b[100][3];
  printf("\nEnter the order of metrix ");
  scanf("%d%d",&m,&n);
  int a[m][n];
@@ -42,7 +42,10 @@ Void main()
           s++;
         }
       }
-   }  
+   } 
+  b[0][0]=i+1;
+  b[0][1]=j+1;
+  b[0][2]=s;
   for(i=0;i<m;i++)
   {
     for(j=0;j<3;j++)
